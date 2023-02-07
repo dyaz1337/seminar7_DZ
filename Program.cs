@@ -42,45 +42,45 @@
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
 
-Console.Write("Введи номер строки: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введи номер столбца: ");
-int m = Convert.ToInt32(Console.ReadLine());
-int[,] nums = new int[n, m];
-RandomNumbers(nums);
-PrintArray(nums);
+// Console.Write("Введи номер строки: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введи номер столбца: ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// int[,] nums = new int[n, m];
+// RandomNumbers(nums);
+// PrintArray(nums);
 
-if (n > nums.GetLength(0) || m > nums.GetLength(1))
-{
-    Console.WriteLine("такого элемента нет");
-}
-else
-{
-    Console.WriteLine($"значение элемента {n} строки и {m} столбца равно {nums[n-1,m-1]}");
-}
+// if (n > nums.GetLength(0) || m > nums.GetLength(1))
+// {
+//     Console.WriteLine("такого элемента нет");
+// }
+// else
+// {
+//     Console.WriteLine($"значение элемента {n} строки и {m} столбца равно {nums[n-1,m-1]}");
+// }
 
-void RandomNumbers(int[,] array)
-{
-    for (int i = 0; i < array.GetLength(0); i++)
-        {        
-            for (int j = 0; j < array.GetLength(1); j++)
-            {
-                array [i,j] = new Random().Next(-100, 100)/10;
-            }   
-        }
-}
+// void RandomNumbers(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//         {        
+//             for (int j = 0; j < array.GetLength(1); j++)
+//             {
+//                 array [i,j] = new Random().Next(-100, 100)/10;
+//             }   
+//         }
+// }
 
-void PrintArray(int[,] array)
-{
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            Console.Write(array[i,j] + " ");
-        }   
-        Console.WriteLine(""); 
-    }
-}
+// void PrintArray(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i,j] + " ");
+//         }   
+//         Console.WriteLine(""); 
+//     }
+// }
 // Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 // Например, задан массив:
 // 1 4 7 2
